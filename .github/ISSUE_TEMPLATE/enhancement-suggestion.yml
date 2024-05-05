@@ -1,0 +1,39 @@
+name: Enhancement suggestion
+description: Suggest a new feature or improvement to existing functionality.
+labels:
+  - enhancement
+  - "needs: triage"
+body:
+  - type: input
+    id: user-story
+    attributes:
+      label: User story
+      description: Describe the feature from the user's perspective.
+      placeholder: ex. As a customer, I want to add items to my cart so that I can purchase them.
+      value: As a [USER], I want to [GOAL] so that [REASON].
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Describe the definition of done for this feature.
+      placeholder: ex. - [ ] ...
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature important? (consider the benefits and impact)
+      placeholder: ex. This would be useful because ...
+    validations:
+      required: true
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Additional details
+      description: "Optional: Any additional information"
+      placeholder: ex. alternatives, examples, and use-cases, screenshots, mockups, etc.

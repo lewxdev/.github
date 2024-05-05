@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a bug or other issue.
+labels:
+  - bug
+  - "needs: triage"
+body:
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect?
+      placeholder: ex. When ..., I expect ...
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+      placeholder: ex. When ..., I see ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: How can the issue be reproduced? (also include playground link if possible)
+      placeholder: ex. 1. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The software version
+      placeholder: ex. v1.0.0, v1.2.3-alpha, etc.
+      value: latest
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: The runtime environment
+      placeholder: ex. Node.js v18.x, macOS 14.4, Chrome 110, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Additional details
+      description: "Optional: Any additional information"
+      placeholder: ex. logs, screenshots, stack trace, etc.
